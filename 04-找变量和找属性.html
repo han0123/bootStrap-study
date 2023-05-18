@@ -1,0 +1,16 @@
+<script>
+  var num = 100 // var声明全局变量会成为window对象全局属性
+  var obj = {
+    num: 200,
+    getNum: function () {
+      console.log(num) // 找变量依据作用域链
+      console.log(this.num) // 找属性依据原型链
+    },
+  }
+
+  //   num = 147
+  //   obj.getNum()
+
+  var getNum = obj.getNum
+  getNum()
+</script>

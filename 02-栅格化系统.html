@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" />
+    <style>
+      .row div:nth-child(1) {
+        background-color: red;
+      }
+      .row div:nth-child(2) {
+        background-color: green;
+      }
+      .row div:nth-child(3) {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- 屏幕 大于 1200px 应用 col-lg-* 类名 -->
+        <!-- 屏幕 大于 992px 应用 col-md-* 类名 -->
+        <!-- 屏幕 大于 768px 应用 col-sm-* 类名 -->
+        <!-- 屏幕 小于 768px 应用 col-xs-12 类名 默认情况 -->
+        <div class="col-lg-4 col-md-8 col-sm-2">1</div>
+        <div class="col-lg-4 col-md-2 col-sm-5">2</div>
+        <div class="col-lg-4 col-md-2 col-sm-5">3</div>
+      </div>
+      <div class="row">
+        <!-- 屏幕 大于 1200px 应用 col-lg-* 类名 -->
+        <!-- 屏幕 大于 992px 应用 col-md-* 类名 -->
+        <!-- 屏幕 大于 768px 应用 col-sm-* 类名 -->
+        <!-- 屏幕 小于 768px 应用 col-xs-12 类名 默认情况 -->
+        <div class="col-lg-10 col-md-6 col-sm-8">4</div>
+        <div class="col-lg-2 col-md-6 col-sm-4">5</div>
+      </div>
+    </div>
+  </body>
+</html>

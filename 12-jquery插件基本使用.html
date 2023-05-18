@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #ccc;
+      }
+
+      .abc {
+        width: 300px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">花生瓜子八宝粥</div>
+    <button id="btn">button</button>
+    <script src="./bootstrap/js/jquery.js"></script>
+    <script>
+      $('#btn').on('click', function (event) {
+        // $('#box').text('啤酒饮料矿泉水')
+        // $('#box').css('font-size', '30px')
+        // $('#box').css('background-color', 'pink')
+
+        $('#box')
+          .text('啤酒饮料矿泉水')
+          .css('font-size', '30px')
+          .css('background-color', 'pink')
+          .addClass('abc')
+          .attr('index', 100)
+      })
+    </script>
+  </body>
+</html>
